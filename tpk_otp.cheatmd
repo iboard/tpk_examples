@@ -1,0 +1,23 @@
+# TPK OTP Cheat Sheet
+
+> **THIS IS WORK IN PROGRESS!**
+
+## Usage
+
+### mix.exs
+
+Append the following line to your mix.deps
+
+```elixir
+  {:tpk_otp, ~> "0.0"}
+```
+
+## GenServer
+
+### SimpleServer
+
+A `TPK.OTP.SimpleServer` defines some convenience functions to avoid GenServer boilerplate code.
+
+```elixir
+  use TPK.OTP.SimpleServer, __MODULE__
+```
