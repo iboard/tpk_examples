@@ -12,7 +12,7 @@
     # md_to_html!("### This is a H3\n\nand a paragraph"
   </code>
   <div class="block p-2 bg-yellow-100 rounded my-4">
-    <%= raw(TPK.Common.md_to_html!("### This is a H3\n\nand a paragraph")) %>
+    <%= raw(TPK.Common.HTML.md_to_html!("### This is a H3\n\nand a paragraph")) %>
   </div>
 
   <h3 class="text-2xl font-semibold text-zinc-800">From file</h3>
@@ -21,7 +21,7 @@
   </code>
   <div class="block p-2 bg-yellow-100 rounded my-4">
     <small>
-      <%= raw(TPK.Common.md_file_to_html!("LICENSE.md")) %>
+      <%= raw(TPK.Common.HTML.md_file_to_html!("LICENSE.md")) %>
     </small>
   </div>
   <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
@@ -29,7 +29,7 @@
   </code>
   <div class="block p-2 bg-yellow-100 rounded my-4">
     <small>
-      <%= raw(TPK.Common.md_file_to_html!("unknown.md")) %>
+      <%= raw(TPK.Common.HTML.md_file_to_html!("unknown.md")) %>
     </small>
   </div>
 </div>
