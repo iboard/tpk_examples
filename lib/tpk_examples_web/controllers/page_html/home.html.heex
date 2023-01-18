@@ -3,11 +3,33 @@
 <p class="p-2 mb-4">See HEX docs and cheetsheets for all available functions in TPK.Common.</p>
 
 <div class="markdown border rounded p-4 mb-2">
-  <%= raw(TPK.Common.md_to_html!(File.read!("README.md"))) %>
+  <h2 class="text-4xl font-bold text-zinc-600">1.) Markdown</h2>
+  <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
+    # import TPK.Common
+  </code>
+  <h3 class="text-2xl font-semibold text-zinc-800 mt-2">From string</h3>
+  <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
+    # md_to_html!("### This is a H3\n\nand a paragraph"
+  </code>
+  <div class="block p-2 bg-yellow-100 rounded my-4">
+    <%= raw(TPK.Common.md_to_html!("### This is a H3\n\nand a paragraph")) %>
+  </div>
+
+  <h3 class="text-2xl font-semibold text-zinc-800">From file</h3>
+  <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
+    # md_file_to_html!("LICENSE.md")
+  </code>
+  <div class="block p-2 bg-yellow-100 rounded my-4">
+    <small>
+      <%= raw(TPK.Common.md_file_to_html!("LICENSE.md")) %>
+    </small>
+  </div>
+  <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
+    # md_file_to_html!("unknown.md")
+  </code>
+  <div class="block p-2 bg-yellow-100 rounded my-4">
+    <small>
+      <%= raw(TPK.Common.md_file_to_html!("unknown.md")) %>
+    </small>
+  </div>
 </div>
-
-<div class="markdown border rounded p-4 mb-2">
-  <%= raw(TPK.Common.md_to_html!(File.read!("../LICENSE.md"))) %>
-</div>
-
-

@@ -77,7 +77,7 @@ defmodule TpkExamples.MixProject do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md", "LICENSE.md", "tpk_common.cheatmd", "tpk_otp.cheatmd"]
+      extras: ["README.md", "LICENSE.md"]
     ]
   end
 end
