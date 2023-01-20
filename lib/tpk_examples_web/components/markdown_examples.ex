@@ -15,7 +15,7 @@ defmodule TpkExamplesWeb.MarkdownExamples do
 
   def markdown_examples(assigns) do
     ~H"""
-    <div id="idx" class="markdown border rounded p-4 mb-2">
+    <div class="markdown border rounded p-4 mb-2">
       <h2 id="ad1" class="text-4xl font-bold text-zinc-600">1.) Markdown</h2>
       <.top_link />
       <div class="clear-right mb-2"></div>
