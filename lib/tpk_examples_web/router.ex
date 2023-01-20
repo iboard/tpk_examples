@@ -18,6 +18,7 @@ defmodule TpkExamplesWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/examples", ExampleLive, :index
   end
 
   # Other scopes may use custom stacks.

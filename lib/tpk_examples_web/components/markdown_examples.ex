@@ -15,13 +15,13 @@ defmodule TpkExamplesWeb.MarkdownExamples do
 
   def markdown_examples(assigns) do
     ~H"""
-    <div class="markdown border rounded p-4 mb-2">
+    <div id="idx" class="markdown border rounded p-4 mb-2">
       <h2 id="ad1" class="text-4xl font-bold text-zinc-600">1.) Markdown</h2>
       <.top_link />
       <div class="clear-right mb-2"></div>
 
       <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
-        # import TPK.Common
+        # import TPK.Common.HTML
       </code>
       <h3 class="text-2xl font-semibold text-zinc-800 mt-2">From string</h3>
       <code class="block p-2 font-mono bg-zinc-100 rounded my-4">

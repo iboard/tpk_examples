@@ -19,7 +19,11 @@ defmodule TpkExamplesWeb.NumberExamples do
       <.top_link />
       <div class="clear-right mb-2"></div>
 
-      <p>not implemented yet</p>
+      <p class="text-red-600">not implemented yet</p>
+
+      <code class="block p-2 font-mono bg-zinc-100 rounded my-4">
+        # import TPK.Common.Numbers
+      </code>
     </div>
     """
   end
