@@ -11,7 +11,7 @@ config :tpk_examples, TpkExamples.Repo,
   hostname: "localhost",
   database: "tpk_examples_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
-  pool_size: 10
+  pool_size: 4
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
